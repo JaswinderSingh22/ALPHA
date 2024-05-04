@@ -1,0 +1,16 @@
+{
+    "experience":[
+      {
+        "title": "Software Engineer",
+        "company": "Square Yards",
+        "duration": "August 2023 - Present",
+        "description": "Responsible for developing user-friendly web interfaces using React.js and Tailwind CSS."
+      },
+      {
+        "title": "Software Engineer",
+        "company": "Albanero Dev Pvt Lmt",
+        "duration": "Jan 2022 - July 2023",
+        "description": "Led the design and development of responsive websites and mobile apps for clients."
+      }
+    ]
+}
