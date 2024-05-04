@@ -1,49 +1,19 @@
 import React from "react";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  Link,
-  Button,
-} from "@nextui-org/react";
+import styles from "./styles.module.css";
 import { AcmeLogo } from "../icons/logo";
 export default function NavBar() {
   return (
-    <div className="w-full bg-[#15132a] text-black">
-      <Navbar isBordered>
-        <NavbarBrand>
-          <AcmeLogo />
-          <p className="font-bold text-inherit">Jaswinder Singh</p>
-        </NavbarBrand>
-        <NavbarContent className="hidden sm:flex gap-4" justify="center">
-          <NavbarItem>
-            <Link color="foreground" href="/">
-              Home
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link color="foreground" href="projects" aria-current="page">
-              Projects
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link color="foreground" href="learning" aria-current="page">
-              Learning
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link color="foreground" href="about">
-              About
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link color="foreground" href="help">
-              Help
-            </Link>
-          </NavbarItem>
-        </NavbarContent>
-      </Navbar>
+    <div className="w-full h-12 bg-[#8e86ea] text-black flex items-center justify-between p-3">
+      <div className="flex gap-2 items-center">
+        <AcmeLogo /> ALPHA
+      </div>
+      <div className="flex gap-5 mr-5">
+        <a href="/">Home</a>
+        <a href="/projects">Projects</a>
+        <a href="/experience">Experience</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </div>
     </div>
   );
 }
