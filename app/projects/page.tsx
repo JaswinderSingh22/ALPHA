@@ -1,5 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function Projects() {
-  return <div>Projects</div>;
+  return (
+    <div className="w-full h-full overflow-auto bg-slate-400">
+      Projects
+    </div>
+  );
 }

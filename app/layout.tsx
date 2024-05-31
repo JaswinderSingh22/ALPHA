@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Providers } from "./providers";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/NavBar";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Alpha",
@@ -18,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="font-serif">
         <Providers>
           <div
             className="flex flex-col h-screen"
